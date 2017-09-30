@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { Header } from "../presentation";
+import { Messages } from "../containers";
 
 class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Header text={"All messages"} />
-        <Text style={styles.welcome}>This is shared</Text>
+        <View style={{ marginTop: 70, width: 100 + "%" }}>
+          <Messages />
+        </View>
       </View>
     );
   }
@@ -15,8 +18,6 @@ class Home extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
     backgroundColor: "white"
   },
   welcome: {

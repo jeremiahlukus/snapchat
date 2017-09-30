@@ -17,12 +17,16 @@ const styles = StyleSheet.create({
     backgroundColor: "rgb(12,0,51)",
     position: "absolute",
     paddingTop: 40,
-    paddingBottom: 20,
     top: 0,
-    width: 100 + "%"
+    height: 70,
+    width: 100 + "%",
+    justifyContent: "center"
   },
   text: {
-    color: "white"
+    color: "white",
+    fontFamily: "helvetica",
+    alignSelf: "center",
+    fontSize: 14
   }
 });
 
