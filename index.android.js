@@ -4,21 +4,13 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-
-} from 'react-native';
-import App from './src/App'
+import React, { Component } from "react";
+import { AppRegistry } from "react-native";
+import App from "./src/App";
 export default class snapchat extends Component {
   render() {
-    return (
-
-<App />
-    );
+    return <App />;
   }
 }
 
-
-
-AppRegistry.registerComponent('snapchat', () => snapchat);
+AppRegistry.registerComponent("snapchat", () => snapchat);
