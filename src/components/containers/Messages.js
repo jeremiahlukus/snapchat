@@ -6,7 +6,7 @@ import {
   FlatList,
   TouchableOpacity
 } from "react-native";
-
+import { AddMessage } from "../presentation";
 class Messages extends Component {
   constructor() {
     super();
@@ -20,6 +20,8 @@ class Messages extends Component {
       ]
     };
   }
+
+  addMessage() {}
 
   _renderMessage(item) {
     return (
@@ -36,17 +38,25 @@ class Messages extends Component {
 
   render() {
     return (
-      <FlatList
-        keyExtractor={item => item.id}
-        data={this.state.messages}
-        renderItem={({ item }) => this._renderMessage(item)}
-      />
+      <View style={styles.main}>
+        <FlatList
+          keyExtractor={item => item.id}
+          style={styles.main}
+          data={this.state.messages}
+          renderItem={({ item }) => this._renderMessage(item)}
+        />
+        <AddMessage addMessage={() => this.addMessage()} />
+      </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  main: {},
+  main: {
+    width: 100 + "%",
+    height: 100 + "%"
+  },
+
   message: {
     width: 100 + "%",
     borderBottomWidth: 1,
