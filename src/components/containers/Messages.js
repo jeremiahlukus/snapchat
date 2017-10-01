@@ -7,21 +7,40 @@ import {
   TouchableOpacity
 } from "react-native";
 import { AddMessage } from "../presentation";
+import Turbo from "turbo360";
+import config from "../../config";
 class Messages extends Component {
   constructor() {
     super();
     this.state = {
-      messages: [
-        { id: 1, from: "Mom", content: "How are you" },
-        { id: 2, from: "Dad", content: "YOYOY" },
-        { id: 3, from: "Donkey", content: "I see dead people" },
-        { id: 4, from: "Black Sheep", content: "Whats your fav animal" },
-        { id: 5, from: "Nicole", content: "Cucumber" }
-      ]
+      messages: []
     };
   }
 
-  addMessage() {}
+  componentDidMount() {
+    Turbo({ site_id: config.TURBO_APP_ID })
+      .fetch("message")
+      .then(data => {
+        this.setState({
+          messages: data
+        });
+      });
+  }
+
+  addMessage() {
+    Turbo({ site_id: config.TURBO_APP_ID })
+      .create("message", { id: 2, from: "Dad", content: "YOYOY" })
+      .then(data => {
+        let newMessages = Object.assign([], this.state.messages);
+        newMessages.push(data);
+        this.setState({
+          messages: newMessages
+        });
+      })
+      .catch(err => {
+        alert(err.message);
+      });
+  }
 
   _renderMessage(item) {
     return (
