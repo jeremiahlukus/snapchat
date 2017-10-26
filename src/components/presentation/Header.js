@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <View style={styles.topNav}>
         <StatusBar barStyle="light-content" />
-        <Text style={styles.text}> {this.props.text}</Text>
+        <Text style={styles.text}>{this.props.text}</Text>
       </View>
     );
   }
@@ -16,14 +16,14 @@ const styles = StyleSheet.create({
   topNav: {
     backgroundColor: "rgb(12,0,51)",
     position: "absolute",
-    paddingTop: 40,
+    paddingTop: 20,
     top: 0,
     height: 70,
     width: 100 + "%",
     justifyContent: "center"
   },
   text: {
-    color: "white",
+    color: "rgb(255,255,255)",
     fontFamily: "helvetica",
     alignSelf: "center",
     fontSize: 14

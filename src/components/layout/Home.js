@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Header text={"All messages"} />
+        <Header text={"All Messages"} />
         <View style={{ marginTop: 70, width: 100 + "%" }}>
           <Messages />
         </View>
@@ -15,20 +15,16 @@ class Home extends Component {
     );
   }
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white"
+    backgroundColor: "rgb(255,255,255)"
   },
   welcome: {
     fontSize: 20,
     textAlign: "center",
     margin: 10
-  },
-  instructions: {
-    textAlign: "center",
-    color: "#333333",
-    marginBottom: 5
   }
 });
 
