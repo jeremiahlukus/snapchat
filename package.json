@@ -9,6 +9,7 @@
 	"dependencies": {
 		"react": "16.0.0-alpha.12",
 		"react-native": "0.48.4",
+		"react-native-image-picker": "^0.26.7",
 		"turbo360": "^1.4.43"
 	},
 	"devDependencies": {

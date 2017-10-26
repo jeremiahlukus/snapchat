@@ -48,6 +48,7 @@ class Messages extends Component {
             this.state.login
           );
         } else {
+          console.log();
           message = "Login success: ";
           return Turbo({ site_id: config.TURBO_APP_ID }).login(
             this.state.login
