@@ -1,8 +1,8 @@
-#CatChat
+# CatChat
 
-##CatChat is a Snapchat Clone built using React Native
+## CatChat is a Snapchat Clone built using React Native
 
-#Contributing
+# Contributing
 
 1) Fork & create a branch
 
