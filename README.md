@@ -31,13 +31,16 @@ It has no requested changes.
 It is up to date with current master.
 
 
+# Getting started
 
-
-npm install yarn start react-native run-ios --simulator="iPhone 6"
+npm install yarn start react-native run-ios --simulator="iPhone 6" 
 
 android simulator: Double tap R on your keyboard to reload,{'\n'} Shake or press menu button for dev menu
 
 ios simulator command r to reload
+
+
+# Who we is
 
 Problem Statement:
 
