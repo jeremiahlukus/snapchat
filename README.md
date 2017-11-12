@@ -1,3 +1,37 @@
+#CatChat
+
+##CatChat is a Snapchat Clone built using React Native
+
+#Contributing
+
+1) Fork & create a branch
+
+create a branch with a descriptive name ( Choose short and descriptive names add your initials to the beginning: jlp-oauth-migration, jlp-issue-15 )
+Write a good commit message ( The summary line (ie. the first line of the message) should be descriptive yet succinct. Ideally, it should be no longer than 50 characters. It should be capitalized and written in imperative present tense. It should not end with a period since it is effectively the commit title )
+2) Implement your fix or feature
+
+View your changes make sure to take a look at your changes.
+3) Make a Pull Request
+
+At this point, you should switch back to your master branch and make sure it's up to date with the master branch:
+git remote add upstream git@github.com:sri96/CatChat
+git checkout master
+git pull upstream master
+Then update your feature branch from your local copy of master, and push it!
+git checkout jlp-oauth-migration
+git rebase master
+git push --set-upstream origin jlp-oauth-migration 
+Finally, go to GitHub and make a Pull Request :D
+
+4) Merging a PR
+
+Make sure at least one other group member has looked over your code
+It has no requested changes.
+It is up to date with current master.
+
+
+
+
 npm install yarn start react-native run-ios --simulator="iPhone 6"
 
 android simulator: Double tap R on your keyboard to reload,{'\n'} Shake or press menu button for dev menu
